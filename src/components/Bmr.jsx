@@ -44,16 +44,20 @@ export default function Bmr() {
       flexDirection: 'column'
     }}>
         <h1>BMR CALCULATOR</h1>
-         <input className="form-control my-3 mx-2" type="text" placeholder="Enter your gender" aria-label="default input example" style={{width:'300px'}} value={gender} onChange={(e) => setGetext(e.target.value)} />
-        <input className="form-control my-3 mx-2" type="number" placeholder="Enter your height" aria-label="default input example" style={{width:'300px'}} value={htext} onChange={(e) => setHtext(e.target.value)} />
-        <input className="form-control my-3 mx-2" type="number" placeholder="Enter your weight" aria-label="default input example" style={{width:'300px'}} value={wtext} onChange={(e) => setWtext(e.target.value)} />
-        <input className="form-control my-3 mx-2" type="number" placeholder="Enter your age" aria-label="default input example" style={{width:'300px'}} value={age} onChange={(e) => setAtext(e.target.value)} />
+        <p>This process will tell how many calories you should take to maintain your body weight</p>
+         <input className="form-control my-3 mx-2" type="text" placeholder="Enter your gender(type-male or female)" aria-label="default input example" style={{width:'300px'}} value={gender} onChange={(e) => setGetext(e.target.value)} />
+        <input className="form-control my-3 mx-2" type="number" placeholder="Enter your height in cm" aria-label="default input example" style={{width:'300px'}} value={htext} onChange={(e) => setHtext(e.target.value)} />
+        <input className="form-control my-3 mx-2" type="number" placeholder="Enter your weight in kg" aria-label="default input example" style={{width:'300px'}} value={wtext} onChange={(e) => setWtext(e.target.value)} />
+        <input className="form-control my-3 mx-2" type="number" placeholder="Enter your age in years" aria-label="default input example" style={{width:'300px'}} value={age} onChange={(e) => setAtext(e.target.value)} />
         <button className="btn btn-tertiary " onClick={Bmri}>CALCULATE</button>
         <button className="btn btn-tertiary " onClick={Again}>AGAIN</button>
         {btext && (
                 <div className="card text-center p-4 bg-light">
                     <h3>Your Results</h3>
-                    <div className="display-4 my-3">{btext}</div>
+                    <div className="display-4 my-3">{btext} claories</div>
+                    <h2>Tip-</h2>
+                    <p>You may add extra 500 calories to it,to start a healthy weightgain</p>
+                    <p>You may reduce 500 calories to it,to start a healthy weightloss</p>
                     </div>)}
                     </div>
         </>
