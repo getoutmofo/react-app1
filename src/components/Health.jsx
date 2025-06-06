@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 export default function Health() {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(1);
 
   const increase = () => setCount(count + 1);
   const decrease = () => setCount(count - 1);
