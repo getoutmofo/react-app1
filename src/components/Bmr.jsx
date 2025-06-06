@@ -11,7 +11,7 @@ export default function Bmr() {
         const hhtext=parseFloat(htext);
         const aage=parseFloat(age);
        
-        if(gender==="male"){
+        if(gender==="male" || gender==="Male"){
             const bmr= 88.362+(13.397*wwtext)+(4.799*hhtext)-(5.677*aage);
             console.log(bmr);
             setBtext(bmr);
